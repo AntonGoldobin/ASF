@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM justarchi/archisteamfarm:6.2.2.3",
+    "ENV TZ=Europe/Moscow",
+    "VOLUME /app/config",
+    "EXPOSE 1242"
+  ]
+}
