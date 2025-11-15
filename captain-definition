@@ -1,14 +1,13 @@
 {
-  "schemaVersion": 2,
-  "dockerfileLines": [
-    "FROM justarchi/archisteamfarm:6.2.2.3",
-    "RUN chmod -R 777 /app",
-    "ENV TZ=Europe/Moscow",
-    "USER 1000:1000",
-    "VOLUME /app/config",
-    "VOLUME /app/plugins",
-    "COPY ./config /app/config",
-    "COPY ./plugins /app/plugins",
-    "EXPOSE 1242"
-  ]
+"schemaVersion": 2,
+"dockerfileLines": [
+"FROM justarchi/archisteamfarm:6.2.2.3",
+"RUN chmod -R 777 /app",
+"ENV TZ=Europe/Moscow",
+"VOLUME /app/config",
+"VOLUME /app/plugins",
+"COPY ./config /app/config",
+"COPY ./plugins /app/plugins",
+"EXPOSE 1242"
+]
 }
