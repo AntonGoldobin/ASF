@@ -9,6 +9,7 @@ services:
     # Эта папка должна содержать ваши файлы ASF.json и JSON-файлы ботов.
     volumes:
       - ./config:/app/config
+      - ./plugins:/app/plugins
     # Опционально: Откройте порт IPC, если планируете использовать веб-интерфейс (ASF-IPC)
     # Порт по умолчанию — 1242.
     ports:
