@@ -1,3 +1,30 @@
 {
-  "IPCPassword": "FDr4yh67hJJ"
+  "IPCPassword": "FDr4yh67hJJ",
+  "ASFEnhance": {
+    "EULA": true,
+    "Statistic": true,
+    "DevFeature": false,
+    "DisabledCmds": ["foo", "bar"],
+    "AutoClaimItemBotNames": "",
+    "AutoClaimItemPeriod": 23,
+    "ApiKey": "",
+    "DefaultLanguage": "",
+    "CustomGifteeMessage": "",
+    "Address": {
+      "Address": "Address",
+      "City": "City",
+      "Country": "US",
+      "State": "NE",
+      "PostCode": "12345"
+    },
+    "Addresses": [
+      {
+        "Address": "Address",
+        "City": "City",
+        "Country": "US",
+        "State": "NE",
+        "PostCode": "12345"
+      }
+    ]
+  }
 }
