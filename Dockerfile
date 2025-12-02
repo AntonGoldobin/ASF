@@ -1,16 +1,13 @@
-FROM justarchi/archisteamfarm:6.2.2.3
+FROM justarchi/archisteamfarm:latest
 
-# Установка часового пояса
+# Copy local config and plugins into the image (assuming they exist in the build context)
+COPY ./config /app/config
+COPY ./plugins /app/plugins
+
+# Set environment variables
 ENV TZ=Europe/Moscow
 
-# Опционально: Смена пользователя/группы для прав на volume (если нужно)
-USER 1000:1000
-
-# Определение volume для конфига (чтобы CapRover подхватил как persistent)
-VOLUME /app/config
-
-# Экспоз порта для IPC (ASF-UI)
+# Expose the IPC port
 EXPOSE 1242
 
-# Если нужно переопределить CMD или ENTRYPOINT — добавь здесь (по умолчанию из базового image)
-# CMD ["--your-command-if-needed"]
+# The entrypoint/cmd should be inherited from the base image, no need to specify unless overridden

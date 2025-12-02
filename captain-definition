@@ -1,7 +1,7 @@
 {
 "schemaVersion": 2,
 "dockerfileLines": [
-"FROM justarchi/archisteamfarm:6.2.2.3",
+"FROM justarchi/archisteamfarm:latest",
 "RUN chmod -R 777 /app",
 "ENV TZ=Europe/Moscow",
 "VOLUME /app/config",

@@ -1,6 +1,6 @@
 services:
   archisteamfarm:
-    image: justarchi/archisteamfarm:6.2.2.3
+    image: justarchi/archisteamfarm:latest
     container_name: archisteamfarm
     # Перезапускать контейнер, если он остановится, если только он не был остановлен явно
     restart: unless-stopped
