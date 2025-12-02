@@ -1,13 +1,4 @@
 {
 "schemaVersion": 2,
-"dockerfileLines": [
-"FROM justarchi/archisteamfarm:latest",
-"RUN chmod -R 777 /app",
-"ENV TZ=Europe/Moscow",
-"VOLUME /app/config",
-"VOLUME /app/plugins",
-"COPY ./config /app/config",
-"COPY ./plugins /app/plugins",
-"EXPOSE 1242"
-]
+"dockerfilePath": "./Dockerfile"
 }
