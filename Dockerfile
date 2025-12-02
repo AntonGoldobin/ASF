@@ -10,4 +10,6 @@ ENV TZ=Europe/Moscow
 # Expose the IPC port
 EXPOSE 1242
 
+CMD ["--ignore-unsupported-environment"]
+
 # The entrypoint/cmd should be inherited from the base image, no need to specify unless overridden
